@@ -1,2 +1,19 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Conception Connection!</h1>
+<h2>Based on <a target="_blank"
+    href="http://www.smbc-comics.com/index.php?db=comics&id=2922#comic">SMBC
+    2922</a> <p>Enter your birth year, month, and day all as numbers. Please
+  keep in mind to not use leading zeros. That is, if your birthday is May 3rd,
+  1990, you would put 1991 in the first box, 5 in the second, and 3 in the
+  third. I will keep working on improvements and bug fixes. Let me know at <a
+  href="mailto:mxadelman@gmail.com">mxadelman@gmail.com</a></p>
+
+<%= form_tag :controller => 'home', :action => 'create', :method => 'get' do %>
+  <%= text_field_tag 'year', nil, :placeholder => 'Enter birth year' %>
+  <%= text_field_tag 'month', nil, :placeholder => 'Enter month' %>
+  <%= text_field_tag 'day', nil, :placeholder => 'Enter birth day' %>
+
+  <%= submit_tag "Submit" %>
+<% end %>
+
+</form> 
+

@@ -1,6 +1,10 @@
 TestApp::Application.routes.draw do
   get "home/index"
 
+  resources :home do
+    get :create, :as => :create
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
