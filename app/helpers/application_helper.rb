@@ -1,3 +1,7 @@
+require 'rubygems'
+require 'curb'
+require 'curb-fu'
+
 module ApplicationHelper
   
   def concept(year, month, day)
