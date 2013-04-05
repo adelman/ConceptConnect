@@ -6,7 +6,13 @@
   keep in mind to not use leading zeros. That is, if your birthday is May 3rd,
   1990, you would put 1991 in the first box, 5 in the second, and 3 in the
   third. I will keep working on improvements and bug fixes. Let me know at <a
-  href="mailto:mxadelman@gmail.com">mxadelman@gmail.com</a></p>
+      href="mailto:mxadelman@gmail.com">mxadelman@gmail.com</a></p>
+
+  <% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+  <% end %>
+
+  <br />
 
 <%= form_tag :action => 'create' do %>
     <%= select_date(Date.today, :start_year => Time.now.year, 
