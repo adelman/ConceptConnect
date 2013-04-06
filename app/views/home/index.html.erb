@@ -1,12 +1,15 @@
-<h1>Conception Connection!</h1>
-<h2>Based on <a target="_blank"
-    href="http://www.smbc-comics.com/index.php?db=comics&id=2922#comic">SMBC
-    2922</a></h2> 
-  <p>Enter your birth year, month, and day all as numbers. Please
-  keep in mind to not use leading zeros. That is, if your birthday is May 3rd,
-  1990, you would put 1991 in the first box, 5 in the second, and 3 in the
-  third. I will keep working on improvements and bug fixes. Let me know at <a
-      href="mailto:mxadelman@gmail.com">mxadelman@gmail.com</a></p>
+<%= stylesheet_link_tag "application", :media => "all" %>
+<div class="jumbotron">
+    <h1>Conception Connection</h1>
+    <p class="lead">Based on <a target="_blank"
+        href="http://www.smbc-comics.com/index.php?db=comics&id=2922#comic"
+        >SMBC 2922</a></p>
+</div>
+  <p>
+  Enter your date of birth and this algorithm will tell you your approximate 
+  date of conception, and the historical event most likely to have caused your 
+  parents to be inspired that night.
+  </p>
 
   <% if flash[:notice] %>
     <div id="notice" style="color:red"><%= flash[:notice] %></div>
